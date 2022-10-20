@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Krona One", sans-serif;
+}
+#cabecera {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  background-color: #bbbaba;
+  margin: 0;
+}
+#logoGlauka {
+  width: 119px;
+  height: 135px;
+  background-image: url(../image/nuevoLogo\ Glauka.png);
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#menu {
+  display: flex;
+  width: 70%;
+  height: 40px;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 15%;
+
+}
+#menu li {
+  text-decoration: none;
+  list-style-type: none;
+}
+#menu li a {
+  font-family: "Bebas Neue", cursive;
+  color: #df013a;
+  font-size: 30px;
+  text-decoration: none;
+  list-style-type: none;
+}
+#menu li a:hover {
+  color: #fff;
+}
+#principal {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#zonaFlyer {
+  width: 60vw;
+  height: 83vh;
+  background-image: url(../image/Huesca2.jpg);
+  background-size: cover;
+}
+#textoPrincipalUno {
+  width: 40%;
+  height: 20vh;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  color: #fff;
+  float: right;
+  margin-top: 50px;
+  margin-right: 140px;
+}
+#textoPrincipalDos {
+  width: 25%;
+  height: 20vh;
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: #ffffff;
+  margin-top: 270px;
+  margin-left: 500px;
+  text-align: center;
+}
+#secundario {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.textoIntro {
+  width: 60px;
+  color: #df013a;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.textoFuerte {
+  width: 600px;
+  color: #df013a;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  margin-left: 40px;
+}
+
+#fotoUnoSec {
+  width: 300px;
+  height: 300px;
+  background-image: url(../image/Castillo-de-Loarre-Archivo-Prames.jpg);
+  background-size: cover;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+#terciario {
+  width: 100vw;
+  height: 100vh;
+  background-color: #df013a;
+}
+#cuaternario {
+  width: 100vw;
+  height: 600px;
+  background-color: #ffffff;
+}
+#quinario {
+  width: 100%;
+  height: 500px;
+  background-color: #df013a;
+}
