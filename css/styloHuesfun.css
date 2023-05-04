@@ -138,9 +138,10 @@
 #secundario {
   display: grid;
   grid-template-areas: "none tituloSecundario tituloSecundario tituloSecundario"
+  "none textoIntro textoIntro textoIntro"
   "none bloqueUnoSec bloqueDosSec bloqueTresSec";
   grid-template-columns: 35% 21% 21% 21%;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: 15vh 10vh 60vh;
   background-image: url(../image/fondoUno.jpg);
   background-size: cover;
   margin: 0;
@@ -162,10 +163,16 @@
   grid-area: tituloSecundario;
 }
 .textoIntro {
-  width:40vw;
+  grid-area: textoIntro;
   font-family: "Krona One", sans-serif;
   color: #e00da1;
   font-size: 18px;
+  margin-top: 10px;
+}
+.textoSub {
+  font-family: "Krona One", sans-serif;
+  color: #e00da1;
+  font-size: 22px;
   margin: 0;
 }
 .subTitulos {
@@ -187,25 +194,25 @@
   height: 30vh;
   background-image: url(../image/Castillo.jpg);
   background-size: cover;
-  margin-top: 68px;
+  margin-top: 60px;
 }
 #fotoBloqueDosSec {
   width: 18vw;
   height: 30vh;
   background-image: url(../image/torre.jpg);
   background-size: cover;
-  margin-top: 95px;
+  margin-top: 60px;
 }
 #fotoBloqueTresSec {
   width: 18vw;
   height: 30vh;
   background-image: url(../image/Alojamientos.jpg);
   background-size: cover;
-  margin-top: 95px;
+  margin-top: 60px;
 }
 #terciario {
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   background-image: url(../image/fondoWeb.jpeg);
   background-size: cover;
   margin: 0;
@@ -226,8 +233,8 @@
   grid-template-areas: "none tituloCuaternario tituloCuaternario tituloCuaternario"
   "none bloqueUnoCua bloqueDosCua bloqueTresCua";
   grid-template-columns: 10% 21% 21% 21%;
-  grid-template-rows: 20vh 80vh;
-  background-image: url(../image/fondoDos.jpg);
+  grid-template-rows: 20vh 75vh;
+  background-image: url(../image/paisajeSumie.jpg);
   background-size: cover;
   margin: 0;
   border-bottom: 5px  solid #e00da1;
