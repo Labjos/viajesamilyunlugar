@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'SedgwickAveDisplay';
+  src: url(../Fonts/SedgwickAveDisplay-Regular.ttf);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -31,7 +35,7 @@
   
   font-size: 40px;
   color: #e00da1;
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'SedgwickAveDisplay', cursive;
 }
 #menu {
   display: flex;
@@ -53,7 +57,7 @@
   text-decoration: none;
   list-style-type: none;
 }
-#menu li a:hover {
+#menu li a:hover{
   color:  #e00da1;
 }
 #principal {
@@ -64,13 +68,13 @@
 }
 #fotoPrincipal {
   z-index: -1;
-  width: 76vw;
-  height: 82vh;
+  width: 82vw;
   margin: 0;
+  background-color: #000;
   background-size: cover;
 }
 #lateralFoto{
-  width: 28vw;
+  width: 25vw;
   height: 82vh;
   font-family: "Arial", cursive;
   font-size: 24px;
@@ -87,26 +91,28 @@
   margin-left: 50px;
 }
 #elementoJs{
-  width: 80%;
+  width: 70%;
   height: 200px;
   margin-top: 10px;
   margin-left: 50px;
   justify-items: center;
 }
 #myElement{
+  display: block;
+  width: 80%;
   font-size: 30px;
   color: #b40680;
   font-family: 'Sedgwick Ave Display', cursive;
- margin-top: 50px;
- margin-left: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 #firmaLogoGlauka {
   width: 145px;
   height: 145px;
   background-image: url(../image/Logos/logoViajesGlauka23.png);
   background-size: cover;
-  margin-top: 10px;
-  margin-left: 180px;
+  margin-top: 20px;
+  margin-left: 170px;
 }
 #textoInsp {
   width: 26vw;
@@ -195,6 +201,31 @@
   background-image: url(../image/Castillo.jpg);
   background-size: cover;
   margin-top: 60px;
+  transition: 0.5s;
+  overflow: hidden;
+  text-decoration: none;
+  list-style-type: none;
+}
+.capa{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  transform: scale(0);
+  transition: 0.5s ease;
+}
+#fotoBloqueUnoSec:hover .capa{
+  transform: scale(1);
+}
+#fotoBloqueUnoSec a{
+  text-decoration: none;
+  list-style-type: none;
 }
 #fotoBloqueDosSec {
   width: 18vw;
@@ -203,6 +234,13 @@
   background-size: cover;
   margin-top: 60px;
 }
+#fotoBloqueDosSec:hover .capa{
+transform: scale(1);
+}
+#fotoBloqueDosSec a{
+  text-decoration: none;
+  list-style-type: none;
+}
 #fotoBloqueTresSec {
   width: 18vw;
   height: 30vh;
@@ -210,6 +248,13 @@
   background-size: cover;
   margin-top: 60px;
 }
+#fotoBloqueTresSec:hover .capa{
+  transform: scale(1);
+  }
+  #fotoBloqueTresSec a{
+    text-decoration: none;
+    list-style-type: none;
+  }
 #terciario {
   width: 100vw;
   height: 85vh;
@@ -231,9 +276,10 @@
 #cuaternario {
   display: grid;
   grid-template-areas: "none tituloCuaternario tituloCuaternario tituloCuaternario"
+  "none textoIntro textoIntro textoIntro"
   "none bloqueUnoCua bloqueDosCua bloqueTresCua";
-  grid-template-columns: 10% 21% 21% 21%;
-  grid-template-rows: 20vh 75vh;
+  grid-template-columns: 12% 21% 21% 21%;
+  grid-template-rows: 15vh 10vh 60vh;
   background-image: url(../image/paisajeSumie.jpg);
   background-size: cover;
   margin: 0;
@@ -257,50 +303,64 @@
 #fotoBloqueUnoCua {
   width: 18vw;
   height: 30vh;
-  background-image: url(../image/costa.jpg);
+  background-image: url(../image/cruceros.jpg);
   background-size: cover;
-  margin-top: 68px;
+  margin-top: 90px;
+}
+#fotoBloqueUnoCua:hover .capa{
+  transform: scale(1);
+}
+#fotoBloqueUnoCua a{
+  text-decoration: none;
+  list-style-type: none;
 }
 #fotoBloqueDosCua {
   width: 18vw;
   height: 30vh;
   background-image: url(../image/gpAragon.jpg);
   background-size: cover;
-  margin-top: 95px;
+  margin-top: 90px;
+}
+#fotoBloqueDosCua:hover .capa{
+  transform: scale(1);
+}
+#fotoBloqueDosCua a{
+  text-decoration: none;
+  list-style-type: none;
 }
 #fotoBloqueTresCua {
   width: 18vw;
   height: 30vh;
   background-image: url(../image/clasica.jpg);
   background-size: cover;
-  margin-top: 95px;
+  margin-top: 90px;
+  cursor: pointer;
 }
-#fotoBloqueUnoQua {
-  width: 25vw;
-  height: 50vh;
-  background-image: url(../image/gastro.jpg);
-  background-size: cover;
-  margin-top: 50px;
-  margin-left: 70px;
+#fotoBloqueTresCua:hover .capa{
+  transform: scale(1);
+}
+#fotoBloqueTresCua a{
+  text-decoration: none;
+  list-style-type: none;
 }
 #principalGlauka {
   z-index: -1;
   display: flex;
   width: 100vw;
   height: 82vh;
-  background-size: cover;
   border-bottom: 5px solid #e00da1;
 }
 #slideGlauka {
   z-index: -1;
   width: 65vw;
   height: 82vh;
+  background-size: cover;
   margin: 0;
-  
 }
 #destacadoGlauka{
   width: 33vw;
   height: 82vh;
+  background-color: antiquewhite;
   align-items: center;
   text-align: center;
 }
@@ -366,7 +426,6 @@ text-align: justify;
   height: 50vh;
   background-color: rgb(199, 74, 211);
 }
-
 #escapadas {
   z-index: -1;
   display: flex;
@@ -382,7 +441,7 @@ text-align: justify;
 #destacadoEscapadas{
   width: 33vw;
   height: 82vh;
-  background-image: url(../image/A2\ Botero.jpg);
+  background-image: url(../image/excursionAlmazara.jpg);
   background-size: cover;
   align-items: center;
   border-bottom: 5px solid #e00da1;
@@ -427,9 +486,227 @@ text-align: justify;
 #fotoEscapadaTres {
   width: 18vw;
   height: 30vh;
-  background-image: url(../image/PASARELA.jpg);
+  background-image: url(../image/paraisoBenissa.png);
   background-size: cover;
   margin-top: 95px;
+}
+#inscripcion {
+  width: 100vw;
+  height: 30vh;
+  background-color: #e00da1;
+}
+#detalleEscapadasUno {
+    display: grid;
+    grid-template-areas: "none tituloEscapadas tituloEscapadas tituloEscapadas"
+    "none subEscapadas subEscapadas subEscapadas"
+    "none escapadaUnoUno escapadaDosUno escapadaTresUno";
+    grid-template-columns: 10% 21% 21% 21%;
+    grid-template-rows: 15vh 10vh 75vh;
+    background-image: url();
+    background-size: cover;
+    margin: 0;
+    border-bottom: 5px  solid #e00da1;
+}
+#tituloEscapadas {
+  grid-area: tituloEscapadas;
+  margin: 0;
+}
+#subEscapadas {
+  grid-area: subEscapadas;
+  margin: 0;
+  margin-top: 20px;
+}
+#escapadaUnoUno {
+  grid-area: escapadaUnoUno;
+  margin: 0;
+}
+.tituloExcursion {
+  margin-top: 10px;
+}
+#escapadaUnoUnoFoto {
+  width: 20vw;
+  height: 30vh;
+  background-image: url(../image/castillo.jpg);
+  background-size: cover;
+  margin-top: 25px;
+}
+.iconos{
+  margin-top: 10px;
+}
+#escapadaDosUno {
+  grid-area: escapadaDosUno;
+  margin: 0;
+}
+#escapadaDosUnoFoto {
+width: 20vw;
+height: 30vh;
+background-image: url();
+background-size: cover;
+margin-top: 25px;
+}
+#escapadaTresUno {
+  grid-area: escapadaTresUno;
+  margin: 0;
+}
+#escapadaTresUnoFoto {
+  width: 20vw;
+  height: 30vh;
+  background-image: url();
+  background-size: cover;
+  margin-top: 25px;
+  }
+#detalleEscapadasDos {
+    display: grid;
+    grid-template-areas: "none tituloEscapadas tituloEscapadas tituloEscapadas"
+    "none subEscapadas subEscapadas subEscapadas"
+    "none escapadaUnoDos escapadaDosDos escapadaTresDos";
+    grid-template-columns: 35% 21% 21% 21%;
+    grid-template-rows: 15vh 10vh 75vh;
+    background-size: cover;
+    margin: 0;
+    border-bottom: 5px  solid #e00da1;
+}
+#escapadaUnoDosFoto {
+  width: 20vw;
+  height: 30vh;
+  background-image: url(../image/castillo.jpg);
+  background-size: cover;
+  margin-top: 25px;
+}
+#escapadaUnoDos {
+  grid-area: escapadaUnoDos;
+  margin: 0;
+}
+#escapadaDosDosFoto {
+width: 20vw;
+height: 30vh;
+background-image: url();
+background-size: cover;
+margin-top: 25px;
+}
+#escapadaDosDos {
+  grid-area: escapadaDosDos;
+  margin: 0;
+}
+#escapadaTresDosFoto {
+  width: 20vw;
+  height: 30vh;
+  background-image: url();
+  background-size: cover;
+  margin-top: 25px;
+}
+#escapadaTresDos {
+    grid-area: escapadaTresDos;
+    margin: 0;
+}
+#detalleEscapadasTres {
+  display: grid;
+  grid-template-areas: "none tituloEscapadas tituloEscapadas tituloEscapadas"
+  "none subEscapadas subEscapadas subEscapadas"
+  "none escapadaUnoTres escapadaDosTres escapadaTresTres";
+  grid-template-columns: 10% 21% 21% 21%;
+  grid-template-rows: 15vh 10vh 75vh;
+  background-image: url();
+  background-size: cover;
+  margin: 0;
+  border-bottom: 5px  solid #e00da1;
+}
+#escapadaUnoTres {
+  grid-area: escapadaUnoTres;
+  margin: 0;
+}
+#escapadaUnoTresFoto {
+  width: 20vw;
+  height: 30vh;
+  background-image: url(../image/castillo.jpg);
+  background-size: cover;
+  margin-top: 25px;
+}
+#escapadaDosTres {
+  grid-area: escapadaDosTres;
+  margin: 0;
+}
+#escapadaDosTresFoto {
+width: 20vw;
+height: 30vh;
+background-image: url();
+background-size: cover;
+margin-top: 25px;
+}
+#escapadaTresTres {
+  grid-area: escapadaTresTres;
+  margin: 0;
+}
+#escapadaTresTresFoto {
+  width: 20vw;
+  height: 30vh;
+  background-image: url();
+  background-size: cover;
+  margin-top: 25px;
+}
+#escapadas {
+  z-index: -1;
+  display: flex;
+  width: 100vw;
+  height: 82vh;
+}
+#slideEscapadas {
+  z-index: -1;
+  width: 65vw;
+  height: 82vh;
+  margin: 0;
+}
+#destacadoEscapadas{
+  width: 33vw;
+  height: 82vh;
+  background-image: url(../image/excursionAlmazara.jpg);
+  background-size: cover;
+  align-items: center;
+  border-bottom: 5px solid #e00da1;
+}
+#principalEscapadas {
+  display: grid;
+  grid-template-areas: "none tituloSecundario tituloSecundario tituloSecundario"
+  "none bloqueEscapadaUno bloqueEscapadaDos bloqueEscapadaTres";
+  grid-template-columns: 35% 21% 21% 21%;
+  grid-template-rows: 20vh 80vh;
+  background-image: url(../image/fondoUno.jpg);
+  background-size: cover;
+  margin: 0;
+  border-bottom: 5px solid #e00da1;
+}
+#bloqueEscapadaUno {
+  grid-area: bloqueEscapadaUno;
+  margin: 0;
+}
+#bloqueEscapadaDos{
+  grid-area: bloqueEscapadaDos;
+  margin: 0;
+}
+#bloqueEscapadaTres{
+  grid-area: bloqueEscapadaTres;
+  margin: 0;
+}
+#fotoEscapadaUno{
+  width: 18vw;
+  height: 30vh;
+  background-image: url(../image/Castillo.jpg);
+  background-size: cover;
+  margin-top: 90px;
+}
+#fotoEscapadaDos{
+  width: 18vw;
+  height: 30vh;
+  background-image: url(../image/viaje.jpg);
+  background-size: cover;
+  margin-top: 125px;
+}
+#fotoEscapadaTres {
+  width: 18vw;
+  height: 30vh;
+  background-image: url(../image/benissa.png);
+  background-size: cover;
+  margin-top: 125px;
 }
 #inscripcion {
   width: 100vw;
@@ -536,7 +813,7 @@ margin-top: 25px;
   background-image: url(../image/Botero700.jpg);
   background-size: cover;
   margin-top: 25px;
-}
+  }
 #escapadaTresDos {
     grid-area: escapadaTresDos;
     margin: 0;
@@ -586,224 +863,241 @@ margin-top: 25px;
   background-size: cover;
   margin-top: 25px;
 }
-#escapadas {
+#viajes {
   z-index: -1;
   display: flex;
   width: 100vw;
   height: 82vh;
 }
-#slideEscapadas {
+#slideViajes {
   z-index: -1;
   width: 65vw;
   height: 82vh;
   margin: 0;
 }
-#destacadoEscapadas{
+#destacadoViajes{
   width: 33vw;
   height: 82vh;
-  background-image: url(../image/A2\ Botero.jpg);
+  background-image: url(../image/viajeJapon.jpeg);
   background-size: cover;
   align-items: center;
   border-bottom: 5px solid #e00da1;
 }
-#principalEscapadas {
+#principalViajes {
   display: grid;
   grid-template-areas: "none tituloSecundario tituloSecundario tituloSecundario"
+  "none textoIntro textoIntro textoIntro"
   "none bloqueEscapadaUno bloqueEscapadaDos bloqueEscapadaTres";
   grid-template-columns: 35% 21% 21% 21%;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: 15vh 10vh 80vh;
   background-image: url(../image/fondoUno.jpg);
   background-size: cover;
   margin: 0;
   border-bottom: 5px solid #e00da1;
 }
-#bloqueEscapadaUno {
-  grid-area: bloqueEscapadaUno;
-  margin: 0;
-}
-#bloqueEscapadaDos{
-  grid-area: bloqueEscapadaDos;
-  margin: 0;
-}
-#bloqueEscapadaTres{
-  grid-area: bloqueEscapadaTres;
-  margin: 0;
-}
-#fotoEscapadaUno{
+#fotoViajesUno{
   width: 18vw;
   height: 30vh;
-  background-image: url(../image/Castillo.jpg);
-  background-size: cover;
-  margin-top: 68px;
-}
-#fotoEscapadaDos{
-  width: 18vw;
-  height: 30vh;
-  background-image: url(../image/ordesa.jpg);
+  background-image: url(../image/NYCity.jpg);
   background-size: cover;
   margin-top: 95px;
 }
-#fotoEscapadaTres {
+#fotoViajesDos{
   width: 18vw;
   height: 30vh;
-  background-image: url(../image/PASARELA.jpg);
+  background-image: url(../image/seas.jpeg);
   background-size: cover;
   margin-top: 95px;
 }
-#inscripcion {
+#fotoViajesTres {
+  width: 18vw;
+  height: 30vh;
+  background-image: url(../image/temploJapan.jpg);
+  background-size: cover;
+  margin-top: 95px;
+}
+#detalleAMedida {
+  display: block;
   width: 100vw;
-  height: 30vh;
-  background-color: #e00da1;
-}
-#detalleEscapadasUno {
-    display: grid;
-    grid-template-areas: "none tituloEscapadas tituloEscapadas tituloEscapadas"
-    "none subEscapadas subEscapadas subEscapadas"
-    "none escapadaUnoUno escapadaDosUno escapadaTresUno";
-    grid-template-columns: 10% 21% 21% 21%;
-    grid-template-rows: 15vh 10vh 75vh;
-    background-image: url();
-    background-size: cover;
-    margin: 0;
-    border-bottom: 5px  solid #e00da1;
-}
-#tituloEscapadas {
-  grid-area: tituloEscapadas;
+  height: 82vh;
+  background-color: #fff;
   margin: 0;
+  border-bottom: 5px solid #e00da1;
 }
-#subEscapadas {
-  grid-area: subEscapadas;
-  margin: 0;
-  margin-top: 20px;
+#tituloAMedida{
+  margin-top: 60px;
+  margin-left: 250px;
 }
-#escapadaUnoUno {
-  grid-area: escapadaUnoUno;
-  margin: 0;
-}
-.tituloExcursion {
+#subAMedida{
   margin-top: 10px;
+  margin-left: 250px;
 }
-#escapadaUnoUnoFoto {
-  width: 20vw;
-  height: 30vh;
-  background-image: url(../image/castillo.jpg);
-  background-size: cover;
-  margin-top: 25px;
+#explicacion{
+  display: flex;
+  width: 90%;
+  height: 35vh;
+  margin-top: 40px;
+  margin-left: 100px;
 }
-.iconos{
-  margin-top: 10px;
+#pasoUno{
+  background-color: rgba(169, 169, 169, 0.251);
 }
-#escapadaDosUno {
-  grid-area: escapadaDosUno;
+#pasoDos{
+  background-color: rgba(169, 169, 169, 0.459);
+}
+#pasoTres{
+  background-color: rgba(169, 169, 169, 0.677);
+}
+#pasoCuatro{
+  background-color: rgba(169, 169, 169, 0.872);
+}
+.masTitulos{
+  display: flex;
+  width: 100%;
+  height: 10vh;
+}
+#big{
+  font-size: 100px;
+  font-weight: 700;
+  color: #e00da1;
   margin: 0;
+  margin-left: 50px;
 }
-#escapadaDosUnoFoto {
-width: 20vw;
-height: 30vh;
-background-image: url(../image/PASARELA.jpg);
-background-size: cover;
-margin-top: 25px;
+#textoBig{
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 10px;
 }
-#escapadaTresUno {
-  grid-area: escapadaTresUno;
-  margin: 0;
-}
-#escapadaTresUnoFoto {
+#textoMini{
   width: 20vw;
-  height: 30vh;
-  background-image: url(../image/Botero700.jpg);
-  background-size: cover;
-  margin-top: 25px;
-  }
-#detalleEscapadasDos {
-    display: grid;
-    grid-template-areas: "none tituloEscapadas tituloEscapadas tituloEscapadas"
-    "none subEscapadas subEscapadas subEscapadas"
-    "none escapadaUnoDos escapadaDosDos escapadaTresDos";
-    grid-template-columns: 35% 21% 21% 21%;
-    grid-template-rows: 15vh 10vh 75vh;
-    background-image: url();
-    background-size: cover;
-    margin: 0;
-    border-bottom: 5px  solid #e00da1;
+  height: 20px;
+  padding: 30px 20px;
+  margin-left: 30px;
 }
-#escapadaUnoDosFoto {
-  width: 20vw;
-  height: 30vh;
-  background-image: url(../image/castillo.jpg);
-  background-size: cover;
-  margin-top: 25px;
+#accesoTour{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 }
-#escapadaUnoDos {
-  grid-area: escapadaUnoDos;
-  margin: 0;
+.btnNeon{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  color: #e00da1;
+  background-color: rgba(128, 128, 128, 0.264);
+  letter-spacing: 4px;
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  
 }
-#escapadaDosDosFoto {
-width: 20vw;
-height: 30vh;
-background-image: url(../image/PASARELA.jpg);
-background-size: cover;
-margin-top: 25px;
+.btnNeon:hover{
+  color: #fff;
+  font-weight: 700;
+  background: #e00da1;
+  box-shadow: 0 0 3px #e00da1, 0 0 10px #e00da1, 0 0 20px #e00da1;
+  transition-delay: 1s;
 }
-#escapadaDosDos {
-  grid-area: escapadaDosDos;
-  margin: 0;
+.btnNeon span{
+  position: absolute;
+  display: block;
 }
-#escapadaTresDosFoto {
-  width: 20vw;
-  height: 30vh;
-  background-image: url(../image/Botero700.jpg);
-  background-size: cover;
-  margin-top: 25px;
-  }
-#escapadaTresDos {
-    grid-area: escapadaTresDos;
-    margin: 0;
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #e00da1);
 }
-#detalleEscapadasTres {
+.btnNeon:hover #span1{
+  left: 100%;
+  transition: 1s;
+}
+#span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, #e00da1);
+}
+.btnNeon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s ;
+}
+#span2{
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #e00da1);
+}
+.btnNeon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4{
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #e00da1);
+}
+.btnNeon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+#detalleCruceros {
   display: grid;
   grid-template-areas: "none tituloEscapadas tituloEscapadas tituloEscapadas"
   "none subEscapadas subEscapadas subEscapadas"
-  "none escapadaUnoTres escapadaDosTres escapadaTresTres";
-  grid-template-columns: 10% 21% 21% 21%;
-  grid-template-rows: 15vh 10vh 75vh;
-  background-image: url();
+  "none crucerosUno crucerosDos crucerosTres";
+  grid-template-columns: 35% 21% 21% 21%;
+  grid-template-rows: 15vh 10vh 80vh;
+  background-image: url(../image/fondoUno.jpg);
   background-size: cover;
   margin: 0;
-  border-bottom: 5px  solid #e00da1;
+  border-bottom: 5px solid #e00da1;
 }
-#escapadaUnoTres {
-  grid-area: escapadaUnoTres;
+#crucerosUno {
+  grid-area: crucerosUno;
   margin: 0;
 }
-#escapadaUnoTresFoto {
-  width: 20vw;
+#crucerosDos{
+  grid-area: crucerosDos;
+  margin: 0;
+}
+#crucerosTres{
+  grid-area: crucerosTres;
+  margin: 0;
+}
+#cruceroUnoFoto {
+  width: 18vw;
   height: 30vh;
-  background-image: url(../image/castillo.jpg);
+  background-image: url(../image/cruceros.jpg);
   background-size: cover;
-  margin-top: 25px;
+  margin-top: 95px;
 }
-#escapadaDosTres {
-  grid-area: escapadaDosTres;
-  margin: 0;
-}
-#escapadaDosTresFoto {
-width: 20vw;
-height: 30vh;
-background-image: url(../image/arco.jpg);
-background-size: cover;
-margin-top: 25px;
-}
-#escapadaTresTres {
-  grid-area: escapadaTresTres;
-  margin: 0;
-}
-#escapadaTresTresFoto {
-  width: 20vw;
+#cruceroDosFoto {
+  width: 18vw;
   height: 30vh;
-  background-image: url(../image/calles.jpg);
+  background-image: url(../image/costa.jpg);
   background-size: cover;
-  margin-top: 25px;
+  margin-top: 95px;
+}
+#cruceroTresFoto {
+  width: 18vw;
+  height: 30vh;
+  background-image: url(../image/todoIncluido.jpg);
+  background-size: cover;
+  margin-top: 95px;
 }
 #cultura {
   z-index: -1;

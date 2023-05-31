@@ -7,15 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&display=Sedgwick+Ave+Display&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Fonts/SedgwickAveDisplay-Regular.ttf" />
     <link rel="stylesheet" type="text/css" href="/css/styloHuesfun.css" />
     <title>WELCOME to VIAJES A MIL Y UN LUGAR</title>
   </head>
-  <body>
+  <div>
       <div id="cabecera">
         <a href="../pages/viajesGlauka.html"><div id="logoGlauka"></div></a>
         <div id="slogan"><p>VIVE... VIAJA</br>www.viajesamilyunlugar.com</p></div>
           <nav id="menu">
-            <li><a href="index.html">INICIO</a></li>
+            <li class="active"><a href="index.html">INICIO</a></li>
             <li><a href="./pages/escapadas.html">ESCAPADAS</a></li>
             <li><a href="./pages/viajes.html">VIAJES</a></li>
             <li><a href="./pages/cultura.html">CULTURA</a></li>
@@ -26,32 +30,45 @@
         </div>
     <div id="principal"> 
       <div id="fotoPrincipal">
-        <video src="../image/viajesGlauka.mp4" width="1600vw" autoplay loop muted ></video>
+        <video src="../image/viajesGlauka.mp4" width="100%" type="video/mp4" muted autoplay loop controls></video>
       </div>
       <div id="lateralFoto">
-          <p>QUE NOS DIFERENCIA:</br>Planificación, seguimiento y el acompañamiento que hacemos con nuestros pasajeros durante todo su viaje, asegurandonos así que van a poder disfrutar siempre de su viaje, en las mejores condiciones.</p>
+          <p><b>QUE NOS DIFERENCIA:</b></br></br>Planificación, seguimiento y el acompañamiento que hacemos con nuestros pasajeros durante todo su viaje, asegurandonos así que van a poder disfrutar siempre de su viaje, en las mejores condiciones.</p>
         <div id="elementoJs">
           <span id="myElement"></span></div>
           <div id="firmaLogoGlauka"></div>
+        </div>
       </div>
-  </div>
+    </div>
   <div id="secundario">
       <div id="tituloSecundario"><p class="textoFuerte">Mucho por descubrir</p></div>
       <p class="textoIntro">VEN A CONOCER</p>
       <div id="bloqueUnoSec">
         <p class="textoSub">ESCAPADAS</p>
-        <div id="fotoBloqueUnoSec"></div>
-        <p class="subTitulos" >Excursiones diarias y de fin de semana</p>
+         <div id="fotoBloqueUnoSec">
+          <a href="../pages/escapadas.html#detalleEscapadasUno"><div class="capa">
+            <h2>Conoce Huesca</h2>
+          </div></a>
+         </div>
+          <p class="subTitulos" >Excursiones diarias y de fin de semana</p>
       </div>
       <div id="bloqueDosSec">
-        <p class="textoSub">VIAJES</p>
-        <div id="fotoBloqueDosSec"></div>
-        <p class="subTitulos">Viajes a medida, a todo el mundo</p>
+        <p class="textoSub">VIAJES A MEDIDA</p>
+        <div id="fotoBloqueDosSec">
+          <a href="../pages/viajes.html#detalleAMedida"><div class="capa">
+            <h2>Reserva tu Viaje</h2>
+          </div></a>
+        </div>
+        <p class="subTitulos">Recorre el mundo a tu manera</p>
       </div>
       <div id="bloqueTresSec">
         <p class="textoSub">ALOJAMIENTOS</p>
-        <div id="fotoBloqueTresSec"></div>
-        <p class="subTitulos">Alojamientos Turisticos en España</p>
+        <div id="fotoBloqueTresSec">
+          <a href="../pages/escapadas.html#escapadaTresTres"><div class="capa">
+            <h2>En Toda España</h2>
+          </div></a>
+        </div>
+        <p class="subTitulos">Alojamientos Turísticos</p>
     </div>
   </div>
   <div id="terciario">
@@ -59,17 +76,32 @@
   </div>
   <div id="cuaternario">
       <div id="tituloCuaternario"><p class="textoFuerte">Experiencias que te harán sentir</p></div>
+      <p class="textoIntro">Disfruta de cada momento</p>
       <div id="bloqueUnoCua">
-        <p class="textoIntro">Disfruta de cada momento</p>
-        <div id="fotoBloqueUnoCua"></div>
-        <p class="subTitulos" >Mundo de Cruceros</p>
+        <p class="textoSub">MUNDO DE CRUCEROS</p>
+        <div id="fotoBloqueUnoCua">
+          <a href="../pages/viajes.html"><div class="capa">
+            <h2>Navega los 7 Mares</h2>
+          </div></a> 
+        </div>
+        <p class="subTitulos">Descubre como disfrutar al máximo tu crucero</p>
       </div>
       <div id="bloqueDosCua">
-        <div id="fotoBloqueDosCua"></div>
-        <p class="subTitulos">Eventos Deportivos</p>
+        <p class="textoSub">EVENTOS DEPORTIVOS</p>
+        <div id="fotoBloqueDosCua">
+          <a href="../pages/deportes.html"><div class="capa">
+            <h2>Acompañanos!</h2>
+          </div></a> 
+        </div>
+        <p class="subTitulos">Grandes Eventos Mundiales y locales</p>
       </div>
       <div id="bloqueTresCua">
-        <div id="fotoBloqueTresCua"></div>
+        <p class="textoSub">CULTURA PARA VIVIRLA</p>
+        <div id="fotoBloqueTresCua">
+          <a href="../pages/cultura.html"><div class="capa">
+            <h2>Agenda Cultural</h2>
+          </div></a> 
+        </div>
         <p class="subTitulos">Exposiciones, Cultura, Conciertos y Expectaculos</p>
     </div>
     </div>
@@ -127,5 +159,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="./js/typeit.js"></script>
   </body>
   </html>
